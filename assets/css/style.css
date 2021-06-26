@@ -10,7 +10,7 @@
     padding: 0;
   }
   
-  body {
+  .body {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
@@ -18,7 +18,7 @@
   
   /* HEADER / NAV BAR STYLES START */
   
-  header {
+  .header {
     padding: 20px 20px;
     background-color: var(--tertiary-color);
     display: flex;
@@ -32,28 +32,33 @@
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  header h1 {
+  .header h1 {
     font-weight: bold;
-    margin: 1;
+    margin: 50px;
     font-size: 40px;
-    font-style: inherit;
+    font-style: Verdana;
     text-shadow: 4px 4px salmon;
+    padding: 5px 5px;
+    background-color: rgb(211, 236, 142);
+    border: solid;
+    
   }
   
-  header a {
+  .header a {
     text-decoration: none;
     color: var(--primary-color);
     
    
   }
   
-  header nav {
-    margin: 7px 0;
+  .header section {
+    margin: 5px 0;
   }
   
-  header nav ul {
+  .header section ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,14 +66,14 @@
     list-style: none;
   }
   
-  header nav ul li a {
+  .header section ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 1px 1px lightgrey;
   }
   
-  header nav ul li a:hover {
+  .header section ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
@@ -80,29 +85,28 @@
   
   
   /* FOOTER STYLES START */
-  footer {
+  .footer {
     background: var(--primary-color);
     padding: 40px 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
     width: 100%;
+   
+    
   }
   
-  footer h2 {
+  .footer h4 {
     color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
   }
   
-  footer div {
-    line-height: 1.5;
+  .footer div {
+    line-height: 1;
     text-align: right;
   }
   
-  footer a {
-    color: var(--secondary-color);
-  }
   /* END FOOTER STYLES */
   
   /* STYLE ALL SECTION TAGS */
@@ -111,66 +115,39 @@
   }
   
   /* HERO STYLES START */
-  .hero {
+  .content {
     background-image: url('../image/21_zoom-pride-pack_01.jpg');
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    
     background-attachment: fixed;
     background-position: 100%;
     
+    
   }
   
-  .hero-cta {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-  
-  .hero-cta h2 {
-    font-style: italic;
-    font-size: 55px;
-    color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+
   
   .hero-form {
-  
-    padding: 15px 25px;
+    
+   
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    width: 25%;
-
-    border: 4px solid lightcoral;
-    background-color: rgba(80, 240, 240, 0.8);
-   
-    color: var(--secondary-color);
+    width: 90%;
     
-    margin: 15%;
-    border-radius: 2px;
-   
-    
-    
-    
+    margin: 10%;
+    align-items: flex-end;
+    padding: 10px 10px;
+    text-overflow: unset;
+    font-weight: bolder;
+    color: rgb(168, 122, 36);
   }
   
-  .hero-form button:hover {
-    background-color: var(--tertiary-color);  
-  }
+ 
   
-  .hero-form h3 {
-    font-size: 24px;
-    margin: 0;
-  }
   .hero-form p {
-    margin: 5px 0 5px 0;
-    font-size: 16px;
+    margin: 10px 10px;
+    font-size: 14px;
     font-weight: bold;
   }
   
@@ -275,6 +252,8 @@
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .primary-border {
@@ -289,11 +268,11 @@
   /* WHAT WE DO STYLES */
   .intro p {
     line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+            color: var(--tertiary-color);
+            width: 80%;
+            margin: 0 auto;
+            font-size: 20px;
+            text-align: center;
   }
   /* WHAT YOU DO STYLES END */
   
@@ -303,7 +282,7 @@
     background: var(--primary-color);
   }
   
-  .step {
+  .intro {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
@@ -311,91 +290,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    vertical-align: 
   }
-  
-  .step:last-child {
-    border-bottom: none;
-  }
-  
-  .step h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    flex: 1 30%;
-  }
-  
-  .step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-  }
-  
-  .step-img img {
-    max-width: 100%;
-  }
-  
-  .step-text {
-    flex: 12;
-  }
-  
-  .step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-  }
-  
-  .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-  }
-  /* WHAT YOU DO STYLES END */
-  
-  /* MEET THE TRAINERS START */
-  .trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .trainer {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-  }
-  
-  .trainer img {
-    width: 100%;
-  }
-  
-  .trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-  }
-  
-  .trainer-bio h3 {
-    font-size: 28px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-  }
-  /* TRAINER STYLES END */
-  
-  /* REACH OUT STYLES START */
+
+
   .contact {
     background: var(--secondary-color);
   }
@@ -408,25 +306,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-image:
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
   }
   
-  .contact-info > * {
-    flex: 1;
-    margin: 15px;
-  }
   
-  .contact-info iframe {
-    height: 400px;
-  }
-  
-  .contact-info div {
-    color: white;
-  }
-  
-  .contact-info h3 {
-    color: var(--primary-color);
-    font-size: 32px;
-  }
   
   .contact-info p, .contact-info address {
     margin: 20px 0;
