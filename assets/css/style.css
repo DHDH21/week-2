@@ -37,11 +37,9 @@
   
   .header h1 {
     font-weight: bold;
-    margin: 50px;
     font-size: 40px;
     font-style: Verdana;
     text-shadow: 4px 4px salmon;
-    padding: 5px 5px;
     background-color: rgb(211, 236, 142);
     border: solid;
     
@@ -111,7 +109,7 @@
   
   /* STYLE ALL SECTION TAGS */
   section {
-    padding: 60px;
+    padding: 10px;
   }
   
   /* HERO STYLES START */
@@ -273,8 +271,13 @@
             margin: 0 auto;
             font-size: 20px;
             text-align: center;
+            border-left: 1px solid firebrick;
   }
   /* WHAT YOU DO STYLES END */
+  .main-content {
+    background-color: wheat;
+
+  }
   
   
   /* WHAT YOU DO STYLES START */
@@ -282,6 +285,7 @@
     background: var(--primary-color);
   }
   
+
   .intro {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -290,7 +294,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    vertical-align: 
+    
+    background-color: var (var(--primary-color));
   }
 
 
