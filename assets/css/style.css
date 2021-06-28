@@ -1,8 +1,4 @@
-:root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
-  }
+
   
   * {
     box-sizing: border-box;
@@ -11,8 +7,9 @@
   }
   
   .body {
-    color: var(--tertiary-color);
+    
     font-family: Helvetica, Arial, sans-serif;
+    
   }
   
   
@@ -20,13 +17,11 @@
   
   .header {
     padding: 20px 20px;
-    background-color: var(--tertiary-color);
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
-    position: -webkit-sticky;
-    top: 0;
     background-image: url("../image/21_zoom-pride-pack_01.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -47,15 +42,12 @@
   
   .header a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #fce138;
     
    
   }
   
-  .header section {
-    margin: 5px 0;
-  }
-  
+ 
   .header section ul {
     display: flex;
     flex-wrap: wrap;
@@ -72,8 +64,8 @@
   }
   
   .header section ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    background: #fce138;
+    color:#024e76; 
     border-radius: 15px;
     text-shadow: 4px 4px lightcoral;
   }
@@ -81,349 +73,244 @@
   /* HEADER / NAVBAR STYLES END */
   
   
-  
-  /* FOOTER STYLES START */
-  .footer {
-    background: var(--primary-color);
-    padding: 40px 35px;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 100%;
-   
-    
-  }
-  
-  .footer h4 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  .footer div {
-    line-height: 1;
-    text-align: right;
-  }
-  
-  /* END FOOTER STYLES */
-  
   /* STYLE ALL SECTION TAGS */
   section {
     padding: 10px;
   }
   
-  /* HERO STYLES START */
+  /* CONTENT & HERO STYLES START */
   .content {
     background-image: url('../image/21_zoom-pride-pack_01.jpg');
     background-size: cover;
     
     background-attachment: fixed;
     background-position: 100%;
-    
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
     
   }
-  
-
+    
   
   .hero-form {
     
-   
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 90%;
-    
-    margin: 10%;
-    align-items: flex-end;
-    padding: 10px 10px;
-    text-overflow: unset;
-    font-weight: bolder;
-    color: rgb(168, 122, 36);
-  }
-  
- 
-  
-  .hero-form p {
-    margin: 10px 10px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .form-input {
     border: 1px solid var(--secondary-color);
     display: block;
+    
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--secondary-color);
+    color: rgb(248, 156, 51);
     width: 100%;
     margin-bottom: 15px; 
-    border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
+    background-color: rgb(61, 63, 55);
+    
   }
+  /* CONTENT & HERO STYLES END */
   
-  .form-input:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  }
-  
-  .hero-form label {
-    margin: 0 5px;
-  }
-  
-  .hero-form button {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-  } 
-  
-  .checkbox-wrapper input, .radio-wrapper input {
-    opacity: 0;
-  }
-  
-  .checkbox-wrapper label, .radio-wrapper label {
-    position: relative;
-    left: 10px;
-    margin: 10px;
-    line-height: 1.6;
-  }
-  
-  .checkbox-wrapper label::before, .radio-wrapper label::before {
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: rgba(255, 255, 255, 0.75);  
-    border: 1px solid var(--secondary-color);  
-    position: absolute;
-    top: -4px;
-    left: -30px;
-  }
-  
-  .radio-wrapper label::before {
-    border-radius: 50%;
-  }
-  
-  .radio-wrapper label::after {
-    content: "";
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: var(--secondary-color);
-    position: absolute;
-    left: -29px;
-    top: -3px;
-    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-  }
-  
-  .checkbox-wrapper label::after {
-    content: "";
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    position: absolute;
-    left: -26px;
-    top: 1px;
-    transform: rotate(-58deg);
-  }
-  
-  .checkbox-wrapper input + label::after, 
-  .radio-wrapper input + label::after {
-    content: none;
-  }
-  
-  .checkbox-wrapper input:checked + label::after, 
-  .radio-wrapper input:checked + label::after {
-    content: "";
-  }
-  /* HERO STYLES END */
-  
-  
-  /* SECTION TITLE STYLES START */
-  .section-title {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
+  /* INTRO STYLES START */
+
+
+  .intro {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: ghostwhite;
   }
   
-  .primary-border {
-    border-color: var(--primary-color);
+  .intro h2 {
+    font-size: 26px;
+    font-style: Verdana;
+    background-color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    border-right: 3px solid firebrick;
+    color: rgb(221, 73, 73);
+
   }
-  
-  .secondary-border {
-    border-color: var(--tertiary-color);
-  }
-  /* SECTION TITLE STYLES END */
-  
-  /* WHAT WE DO STYLES */
+
   .intro p {
-    line-height: 1.7;
-            color: var(--tertiary-color);
+    line-height: 3;
+            
+            width: 80%;
+            margin: 0 auto;
+            font-size: 20px;
+            text-align: left;
+          
+            background-color: ghostwhite;
+  }
+
+  /* INTRO STYLES END */
+  
+  /* WORK STYLES START */
+
+.work {
+    display: flex;
+    flex-direction: row;
+    background-color: ghostwhite;
+    margin-top: 10px;
+}
+
+
+.work h2 {
+  font-size: 26px;
+    font-style: Verdana;
+    background-color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 110px;
+    border-right: 3px solid firebrick;
+    color: rgb(221, 73, 73);
+
+}
+
+
+.work p {
+  line-height: 3;
+            
             width: 80%;
             margin: 0 auto;
             font-size: 20px;
             text-align: center;
-            border-left: 1px solid firebrick;
-  }
-  /* WHAT YOU DO STYLES END */
-  .main-content {
-    background-color: wheat;
+          
+            background-color: ghostwhite;
+}
 
-  }
-  
-  
-  /* WHAT YOU DO STYLES START */
-  .steps { 
-    background: var(--primary-color);
-  }
-  
+  /* WORK STYLES END */
 
-  .intro {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    
-    background-color: var (var(--primary-color));
-  }
+ /* CONTACT STYLES START */
+ .contact {
+  display: flex;
+  flex-direction: row;
+  background-color: ghostwhite;
+  margin-top: 10px;
+ }
 
 
-  .contact {
-    background: var(--secondary-color);
-  }
-  
-  .contact h2 {
-    color: var(--primary-color);
-  }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-image:
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-  }
-  
-  
-  
-  .contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  }
-  
-  .contact-form button {
-    width: 100%;
-    border: none;
-    background: var(--primary-color);
-    color: var(--secondary-color);
+.contact h2 {
+  font-size: 26px;
+    font-style: Verdana;
+    background-color: ghostwhite;
+    font-weight: bold;
     text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
-  }
+    margin-left: 43px;
+    border-right: 3px solid firebrick;
+    color: rgb(221, 73, 73);
+}
+
+
+ .contact p {
   
-  .contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
-  }
+            
+            width: 80%;
+            margin: 0 auto;
+            font-size: 20px;
+            text-align: center;
+           
+            background-color: ghostwhite;
+
+}
+
+
+/* CONTACT STYLES END */
+
+/* RESUME STYLES START */
+.resume {
+  display: flex;
+  flex-direction: row;
+  background-color: ghostwhite;
+  margin-top: 10px;
+
+}
+
+
+.resume h2 {
+  font-size: 26px;
+  font-style: Verdana;
+  background-color: ghostwhite;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 85px;
+  border-right: 3px solid firebrick;
+  color: rgb(221, 73, 73);
+}
+}
+
+
+/* RESUME STYLES END */
+
+
+
+ /* FOOTER STYLES START */
+ .footer {
+  background:ghostwhite;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+ 
   
-  .contact-info a {
-    color: var(--primary-color);
-  }
-  /* REACH OUT STYLES END */
+}
+
+.footer h4 {
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+  text-align: end;
+  color: #fce138;
   
-  /* UTILITIES */
-  .text-left {
-    text-align: left;
-  }
+}
+
+.footer div {
+  line-height: 1;
+  text-align: right;
+}
+
+/* END FOOTER STYLES */
   
-  .text-right {
-    text-align: right;
-  }
   
-  .flex-row {
-    display: flex;
-  }
   
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
     header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
+      
     }
   
     header h1 {
-      width: 100%;
-      text-align: center;
+      
     }
   
     header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
+      
     }
   
     header nav ul li a {
-      font-size: 20px;
+      
     }
   
     footer h2, footer div {
-      text-align: center;
-      width: 100%;
+      
     }
   
     .hero-cta, .hero-form {
-      width: 100%;
+      
     }
     
     .hero-cta {
-      text-align: center;
+      
     }
   
     .section-title {
-      width: 80%;
+      ;
     }
     
     .trainer {
-      flex: 0 70%;
+      
     }
     
     .contact-info iframe{
-      flex: 1 100%;
+     
     }
   }
   
