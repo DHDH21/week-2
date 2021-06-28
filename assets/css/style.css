@@ -117,7 +117,7 @@
  /* MAIN-CONTENT STYLES START */
 
   .main-content {
-  background-color: rgb(202, 202, 214);
+  background-color: ghostwhite;
   font-family: Helvetica, Arial, sans-serif;
   padding-bottom: 50px;
   width: 100%;
@@ -271,12 +271,13 @@
  /* FOOTER STYLES START */
  .footer {
   
-  padding: 40px 35px;
+ 
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 100%;
   background-color: ghostwhite;
+  
  
   
 }
@@ -291,7 +292,7 @@
 }
 
 .footer div {
-  line-height: 1;
+  height: 30px;
   text-align: right;
   
 }
