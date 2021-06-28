@@ -10,6 +10,7 @@
     
     font-family: Helvetica, Arial, sans-serif;
     
+    
   }
   
   
@@ -61,7 +62,10 @@
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 1px 1px lightgrey;
+    
   }
+
+ 
   
   .header section ul li a:hover {
     background: #fce138;
@@ -79,7 +83,9 @@
   }
   
   /* CONTENT & HERO STYLES START */
-  .content {
+  
+  
+  .subtitle {
     background-image: url('../image/21_zoom-pride-pack_01.jpg');
     background-size: cover;
     
@@ -108,36 +114,51 @@
   }
   /* CONTENT & HERO STYLES END */
   
+ /* MAIN-CONTENT STYLES START */
+
+  .main-content {
+  background-color: rgb(202, 202, 214);
+  font-family: Helvetica, Arial, sans-serif;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+    
+  }
+/* MAIN-CONTENT STYLES END */
+  
+
   /* INTRO STYLES START */
 
 
   .intro {
     display: flex;
     flex-direction: row;
-    background-color: ghostwhite;
+    background-color: 
   }
   
   .intro h2 {
+    flex: 1 10%;
+    color: indianred;
     font-size: 26px;
-    font-style: Verdana;
-    background-color: ghostwhite;
-    font-weight: bold;
-    text-align: center;
-    margin-left: auto;
-    border-right: 3px solid firebrick;
-    color: rgb(221, 73, 73);
 
   }
 
   .intro p {
     line-height: 3;
-            
+    flex: 2 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
             width: 80%;
             margin: 0 auto;
             font-size: 20px;
             text-align: left;
-          
-            background-color: ghostwhite;
+            border-left: 2px solid indianred;
+            
   }
 
   /* INTRO STYLES END */
@@ -147,33 +168,30 @@
 .work {
     display: flex;
     flex-direction: row;
-    background-color: ghostwhite;
     margin-top: 10px;
 }
 
 
 .work h2 {
+  flex: 1 10%;
+  color: indianred;
   font-size: 26px;
-    font-style: Verdana;
-    background-color: ghostwhite;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 110px;
-    border-right: 3px solid firebrick;
-    color: rgb(221, 73, 73);
 
 }
 
 
 .work p {
   line-height: 3;
-            
+  flex: 2 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
             width: 80%;
             margin: 0 auto;
             font-size: 20px;
             text-align: center;
-          
-            background-color: ghostwhite;
+            border-left: 2px solid indianred;
+            
 }
 
   /* WORK STYLES END */
@@ -182,32 +200,30 @@
  .contact {
   display: flex;
   flex-direction: row;
-  background-color: ghostwhite;
+  
   margin-top: 10px;
  }
 
 
 .contact h2 {
+  flex: 1 10%;
+  color: indianred;
   font-size: 26px;
-    font-style: Verdana;
-    background-color: ghostwhite;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 43px;
-    border-right: 3px solid firebrick;
-    color: rgb(221, 73, 73);
+  
 }
 
 
  .contact p {
-  
+  line-height: 3;
+  flex: 2 90%;
+  align-items: center;
             
             width: 80%;
             margin: 0 auto;
             font-size: 20px;
             text-align: center;
-           
-            background-color: ghostwhite;
+            border-left: 2px solid indianred;
+            
 
 }
 
@@ -218,22 +234,30 @@
 .resume {
   display: flex;
   flex-direction: row;
-  background-color: ghostwhite;
+  
   margin-top: 10px;
 
 }
 
 
 .resume h2 {
+  flex: 1 10%;
+  color: indianred;
   font-size: 26px;
-  font-style: Verdana;
-  background-color: ghostwhite;
-  font-weight: bold;
-  text-align: center;
-  margin-left: 85px;
-  border-right: 3px solid firebrick;
-  color: rgb(221, 73, 73);
+  
 }
+
+.resume p {
+  border-left: 2px solid indianred;
+  line-height: 3;
+  flex: 2 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
 }
 
 
@@ -243,12 +267,13 @@
 
  /* FOOTER STYLES START */
  .footer {
-  background:ghostwhite;
+  
   padding: 40px 35px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 100%;
+  background-color: ghostwhite;
  
   
 }
@@ -265,6 +290,7 @@
 .footer div {
   line-height: 1;
   text-align: right;
+  
 }
 
 /* END FOOTER STYLES */
