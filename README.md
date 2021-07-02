@@ -17,4 +17,4 @@ https://dhdh21.github.io/week-2/
 Made with ❤️ by [Damon Ha]
 
 
-![21_zoom-pride-pack_01](https://user-images.githubusercontent.com/83087376/123707125-3a6db000-d837-11eb-959d-77e1ab7fb262.jpg)
+![Screenshot 2021-06-28 172554](https://user-images.githubusercontent.com/83087376/124213524-b9c0e500-dabe-11eb-9e14-564a1be856f4.jpg)
