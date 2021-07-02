@@ -130,146 +130,41 @@
   }
 /* MAIN-CONTENT STYLES END */
   
+/* MAIN-ARTICLE STYLES START */
 
-  /* INTRO STYLES START */
-
-
-  .intro {
-    display: flex;
-    flex-direction: row;
-    background-color: 
-  }
-  
-  .intro h2 {
-    flex: 1 10%;
-    color: indianred;
-    font-size: 26px;
-
-  }
-
-  .intro p {
-    line-height: 3;
-    flex: 2 90%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-            width: 80%;
-            margin: 0 auto;
-            font-size: 20px;
-            text-align: left;
-            border-left: 2px solid indianred;
-            
-  }
-
-  /* INTRO STYLES END */
-  
-  /* WORK STYLES START */
-
-.work {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+.main-article {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
 }
 
-
-.work h2 {
-  flex: 1 10%;
+.main-article h2 {
+  flex: 20%;
   color: indianred;
   font-size: 26px;
-
+  
 }
 
-
-.work p {
+.main-article p {
   line-height: 3;
-  flex: 2 90%;
+  flex: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-            width: 80%;
-            margin: 0 auto;
-            font-size: 20px;
+  margin: 0 auto;
+  font-size: 20px;
   text-align: center;
-            border-left: 2px solid indianred;
-            
+  border-left: 2px solid indianred;
 }
 
-.img {
+.main-article img {
   height: 30%;
   width: 30%;
 }
 
-  /* WORK STYLES END */
 
- /* CONTACT STYLES START */
- .contact {
-  display: flex;
-  flex-direction: row;
-  
-  margin-top: 10px;
- }
+/* MAIN-ARTICLE STYLES END */
 
-
-.contact h2 {
-  flex: 1 10%;
-  color: indianred;
-  font-size: 26px;
-  
-}
-
-
- .contact p {
-  line-height: 3;
-  flex: 2 90%;
-  align-items: center;
-            
-            width: 80%;
-            margin: 0 auto;
-            font-size: 20px;
-            text-align: center;
-            border-left: 2px solid indianred;
-            
-
-}
-
-
-/* CONTACT STYLES END */
-
-/* RESUME STYLES START */
-.resume {
-  display: flex;
-  flex-direction: row;
-  
-  margin-top: 10px;
-
-}
-
-
-.resume h2 {
-  flex: 1 10%;
-  color: indianred;
-  font-size: 26px;
-  
-}
-
-.resume p {
-  border-left: 2px solid indianred;
-  line-height: 3;
-  flex: 2 90%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: center;
-  background-image: url(../image/Screenshot\ 2021-06-25\ 180002.jpg);
-  background-position: 100%;
-  height: 500px;
-}
-
-
-/* RESUME STYLES END */
 
 
 
